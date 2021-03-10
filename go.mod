@@ -1,3 +1,3 @@
-module github.com/Yanlong-LI/hi-go-logger
+module github.com/yanlong-li/hi-go-logger
 
-go 1.12
+go 1.15

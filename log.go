@@ -76,9 +76,9 @@ func (log *Log) handle() {
 		return
 	}
 	if log.data != nil {
-		fmt.Printf("%s [%s][%d] %s %#v \n", time.Now().Format("2006/01/02 15:04:05"), GetLabel(log.level), log.code, log.msg, log.data)
+		fmt.Printf("%s [%s]\t[%d] %s %#v \n", time.Now().Format("2006/01/02 15:04:05"), GetLabel(log.level), log.code, log.msg, log.data)
 	} else {
-		fmt.Printf("%s [%s][%d] %s \n", time.Now().Format("2006/01/02 15:04:05"), GetLabel(log.level), log.code, log.msg)
+		fmt.Printf("%s [%s]\t[%d] %s \n", time.Now().Format("2006/01/02 15:04:05"), GetLabel(log.level), log.code, log.msg)
 	}
 
 	if log.level >= FATAL {
